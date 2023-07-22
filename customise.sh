@@ -22,9 +22,9 @@ cd assets
 # system config #
 #################
 #set date and time
-#timedatectl set-timezone Europe/London
+timedatectl set-timezone Europe/London
 #set keyboard layout
-#echo "# KEYBOARD CONFIGURATION FILE\n# Consult the keyboard(5) manual page.\nXKBMODEL=\"pc105\"\nXKBLAYOUT=\"uk\"\nXKBVARIANT=\"\"\nXKBOPTIONS=\"\"\nBACKSPACE=\"guess\"" > /etc/default/keyboard
+echo "# KEYBOARD CONFIGURATION FILE\n# Consult the keyboard(5) manual page.\nXKBMODEL=\"pc105\"\nXKBLAYOUT=\"uk\"\nXKBVARIANT=\"\"\nXKBOPTIONS=\"\"\nBACKSPACE=\"guess\"" > /etc/default/keyboard
 
 
 
@@ -32,9 +32,9 @@ cd assets
 # tool installation #
 #####################
 #update and upgrade apt
-#apt-get update && apt upgrade
+apt-get update && apt upgrade
 #downloads packages from apt
-#apt-get install git silenttrinity cyberchef
+apt-get install git silenttrinity cyberchef gobuster
 
 #install atom
 apt-get install git libasound2 libcurl4 libgbm1 libgcrypt20 libgtk-3-0 libnotify4 libnss3 libglib2.0-bin xdg-utils libx11-xcb1 libxcb-dri3-0 libxss1 libxtst6 libxkbfile1 #prequisites
@@ -62,12 +62,12 @@ echo "alias atom='/bin/atom/atom'" >> /home/$username/.bashrc
 # visual customisation #
 ########################
 # set backgrounds
-#cp kali-red-sticker-16x9.jpg /usr/share/backgrounds/kali
-#cp kali-red-sticker-16x9.jpg /usr/share/backgrounds/kali/login.svg
-#cp kali-red-sticker-16x9.jpg /usr/share/images/desktop-base/desktop-grub/desktop-grub.png
-#cp kali-red-sticker-16x9.jpg /usr/share/images/desktop-base/desktop-grub/default
-#cp kali-red-sticker-16x9.jpg /usr/share/images/desktop-base/desktop-grub/desktop-background
-#gsettings set org.gnome.desktop.background picture-uri file:////usr/share/backgrounds/kali/kali-red-sticker-16x9.jpg
+cp kali-red-sticker-16x9.jpg /usr/share/backgrounds/kali
+cp kali-red-sticker-16x9.jpg /usr/share/backgrounds/kali/login.svg
+cp kali-red-sticker-16x9.jpg /usr/share/images/desktop-base/desktop-grub/desktop-grub.png
+cp kali-red-sticker-16x9.jpg /usr/share/images/desktop-base/desktop-grub/default
+cp kali-red-sticker-16x9.jpg /usr/share/images/desktop-base/desktop-grub/desktop-background
+gsettings set org.gnome.desktop.background picture-uri file:////usr/share/backgrounds/kali/kali-red-sticker-16x9.jpg
 
 
 
