@@ -35,7 +35,7 @@ echo "# KEYBOARD CONFIGURATION FILE\n# Consult the keyboard(5) manual page.\nXKB
 apt-get update && apt upgrade
 #downloads packages from apt and pip
 apt-get install git silenttrinity cyberchef gobuster armitage
-pip install PyCryptodome pwntools scapy
+pip install PyCryptodome pwntools scapy git-dumper
 
 #install atom
 apt-get install git libasound2 libcurl4 libgbm1 libgcrypt20 libgtk-3-0 libnotify4 libnss3 libglib2.0-bin xdg-utils libx11-xcb1 libxcb-dri3-0 libxss1 libxtst6 libxkbfile1 #prequisites
