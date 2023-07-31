@@ -24,7 +24,7 @@ echo "# KEYBOARD CONFIGURATION FILE\n# Consult the keyboard(5) manual page.\nXKB
 #update and upgrade apt
 apt-get update && apt upgrade
 #downloads packages from apt and pip
-apt-get install git silenttrinity cyberchef gobuster armitage seclists
+apt-get install git silenttrinity cyberchef gobuster armitage seclists graphicsmagick-imagemagick-compat
 pip install PyCryptodome pwntools scapy git-dumper
 #install tools from git
 mkdir ~/tools
