@@ -8,16 +8,6 @@ then
         exit
 fi
 
-#download assets from github
-if ! [ -d "assets" ]
-then
-        echo "cloning assets directory..."
-        git clone https://github.com/Lord-of-the-IoT/Kali-linux-customiser.git
-        mv Kali-linux-customiser/assets $(pwd)
-        rm -r Kali-linux-customiser
-fi
-cd assets
-
 #################
 # system config #
 #################
@@ -36,6 +26,10 @@ apt-get update && apt upgrade
 #downloads packages from apt and pip
 apt-get install git silenttrinity cyberchef gobuster armitage seclists
 pip install PyCryptodome pwntools scapy git-dumper
+#install tools from git
+mkdir ~/tools
+cd ~/tools
+git clone https://github.com/Sybil-Scan/imagemagick-lfi-poc.git
 
 #install atom
 apt-get install git libasound2 libcurl4 libgbm1 libgcrypt20 libgtk-3-0 libnotify4 libnss3 libglib2.0-bin xdg-utils libx11-xcb1 libxcb-dri3-0 libxss1 libxtst6 libxkbfile1 #prequisites
@@ -62,6 +56,15 @@ echo "alias atom='/bin/atom/atom'" >> /home/$username/.bashrc
 ########################
 # visual customisation #
 ########################
+#download assets from github
+if ! [ -d "assets" ]
+then
+        echo "cloning assets directory..."
+        git clone https://github.com/Lord-of-the-IoT/Kali-linux-customiser.git
+        mv Kali-linux-customiser/assets $(pwd)
+        rm -r Kali-linux-customiser
+fi
+cd assets
 # set backgrounds
 cp kali-red-sticker-16x9.jpg /usr/share/backgrounds/kali
 cp kali-red-sticker-16x9.jpg /usr/share/backgrounds/kali/login.svg
