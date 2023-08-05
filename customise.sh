@@ -26,6 +26,8 @@ apt-get update && apt upgrade
 #downloads packages from apt and pip
 apt-get install git silenttrinity cyberchef gobuster armitage seclists graphicsmagick-imagemagick-compat  maltego remmina putty-tools chisel sshuttle backdoor-factory veil
 pip install PyCryptodome pwntools scapy git-dumper
+#install tools from gem
+gem install evil-winrm
 #install tools from git
 mkdir ~/tools
 cd ~/tools
