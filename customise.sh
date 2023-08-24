@@ -25,7 +25,7 @@ echo "# KEYBOARD CONFIGURATION FILE\n# Consult the keyboard(5) manual page.\nXKB
 apt-get update && apt upgrade
 #downloads packages from apt and pip
 apt-get install git silenttrinity cyberchef gobuster armitage seclists graphicsmagick-imagemagick-compat  maltego remmina putty-tools chisel sshuttle backdoor-factory veil powershell-empire starkiller
-pip install PyCryptodome pwntools scapy git-dumper textual
+pip install PyCryptodome pwntools scapy git-dumper textual art rich
 #install tools from gem
 gem install evil-winrm
 #install tools from git
