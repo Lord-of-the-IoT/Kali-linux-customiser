@@ -35,7 +35,7 @@ cd ~/tools
 git clone https://github.com/Sybil-Scan/imagemagick-lfi-poc.git
 git clone https://github.com/ly4k/PwnKit.git
 git clone https://github.com/carlospolop/PEASS-ng.git
-#install sagemath for cryptograpy- this will taake forever, as of writing it has been 1hr 30 for this step and it is still going
+#install sagemath for cryptograpy- this will take forever, it took me 2 hours to install
 sudo apt install bc binutils bzip2 ca-certificates cliquer cmake curl ecl eclib-tools fflas-ffpack flintqs g++ gengetopt gfan gfortran
         git glpk-utils gmp-ecm lcalc libatomic-ops-dev libboost-dev libbraiding-dev libbz2-dev libcdd-dev libcdd-tools libcliquer-dev
         libcurl4-openssl-dev libec-dev libecm-dev libffi-dev libflint-arb-dev libflint-dev libfreetype6-dev libgc-dev libgd-dev libgf2x-dev
@@ -45,6 +45,7 @@ sudo apt install bc binutils bzip2 ca-certificates cliquer cmake curl ecl eclib-
         libsuitesparse-dev libsymmetrica2-dev libz-dev libzmq3-dev libzn-poly-dev m4 make nauty openssl palp pari-doc pari-elldata pari-galdata
         pari-galpol pari-gp2c pari-seadata patch perl pkg-config planarity ppl-dev python3-distutils python3-venv r-base-dev r-cran-lattice singular
         sqlite3 sympow tachyon tar tox xcas xz-utils
+cd /usr/share
 git clone --branch master https://github.com/sagemath/sage.git
 cd sage
 make configure
