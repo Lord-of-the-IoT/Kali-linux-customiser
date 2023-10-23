@@ -30,12 +30,16 @@ pip install PyCryptodome pwntools scapy git-dumper textual art rich
 #install tools from gem
 gem install evil-winrm
 #install tools from git
-mkdir ~/tools
-cd ~/tools
+cd /home/$username/tools
+mkdir tools
 git clone https://github.com/Sybil-Scan/imagemagick-lfi-poc.git
 git clone https://github.com/ly4k/PwnKit.git
 git clone https://github.com/carlospolop/PEASS-ng.git
-#install sagemath for cryptograpy- this will take forever, it took me 2 hours to install
+cd ..
+chown $username tools -R
+chgrp $username tools -R
+
+#install sagemath for cryptograpy- this will take forever, it took me over 2 hours to install
 sudo apt install bc binutils bzip2 ca-certificates cliquer cmake curl ecl eclib-tools fflas-ffpack flintqs g++ gengetopt gfan gfortran
         git glpk-utils gmp-ecm lcalc libatomic-ops-dev libboost-dev libbraiding-dev libbz2-dev libcdd-dev libcdd-tools libcliquer-dev
         libcurl4-openssl-dev libec-dev libecm-dev libffi-dev libflint-arb-dev libflint-dev libfreetype6-dev libgc-dev libgd-dev libgf2x-dev
@@ -51,6 +55,10 @@ cd sage
 make configure
 ./configure
 MAKE="make -j8" make
+chmod +rx /bin/sage/sage
+chown $username /bin/sage -R
+chgrp $username /bin/sage -R
+echo 'alias sage="/bin/sage/sage"' >> /home/$username/.bashrc
 
 #install atom
 apt-get install git libasound2 libcurl4 libgbm1 libgcrypt20 libgtk-3-0 libnotify4 libnss3 libglib2.0-bin xdg-utils libx11-xcb1 libxcb-dri3-0 libxss1 libxtst6 libxkbfile1 #prequisites
@@ -59,8 +67,8 @@ wget https://github.com/atom/atom/releases/download/v1.60.0/atom-amd64.tar.gz
 echo "unzipping atom..."
 gzip -d atom-amd64.tar.gz
 tar -xf atom-amd64.tar
-echo "moving atom to tool dir..."
-if ! [ -d "/bin/atom" ]
+echo "moving atom to /bin..."
+if ! [ -d "/bin/atom" ] #if atom not installed
 then
         cp -r atom-*amd64 atom
         rm -r atom-*amd64
@@ -71,7 +79,6 @@ else
         rm -r atom
 fi
 echo "alias atom='/bin/atom/atom'" >> /home/$username/.bashrc
-
 
 
 ########################
