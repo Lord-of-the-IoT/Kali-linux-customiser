@@ -29,6 +29,11 @@ apt-get install gdb gpg notepaddqq cheese cupp
 pip install PyCryptodome pwntools scapy git-dumper textual art rich
 #install tools from gem
 gem install evil-winrm
+#install ida decompiler free version
+wget https://out7.hex-rays.com/files/idafree83_linux.run
+chmod +rx idafree83_linux.run
+./idafree83_linux.run
+rm -r idafree83_linux.run
 #install tools from git
 cd /home/$username/tools
 mkdir tools
