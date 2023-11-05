@@ -41,6 +41,7 @@ git clone https://github.com/Sybil-Scan/imagemagick-lfi-poc.git
 git clone https://github.com/ly4k/PwnKit.git
 git clone https://github.com/carlospolop/PEASS-ng.git
 git clone https://github.com/RUB-NDS/PRET
+git clone https://gitlab.com/kalilinux/packages/snmpcheck.git
 cd ..
 chown $username tools -R
 chgrp $username tools -R
